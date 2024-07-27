@@ -1,3 +1,0 @@
-En esta carpeta se van a guardar temporalmente las imágenes que vengan desde el frontend.
-
-Una vez hecho esto, se subirán a Cloudinary y se eliminarán de esta carpeta, por lo que siempre debería aparecer vacía.

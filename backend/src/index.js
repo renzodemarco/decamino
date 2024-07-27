@@ -6,7 +6,6 @@ import testRoutes from './routes/test.routes.js';
 import userRoutes from './routes/user.routes.js';
 import paymentRoutes from './routes/payment.routes.js';
 import restaurantRoutes from './routes/restaurant.routes.js';
-import osmRoutes from './routes/osm.routes.js';
 import routeRoutes from './routes/route.routes.js';
 import reviewRoutes from './routes/review.routes.js';
 import reservationRoutes from './routes/reservation.routes.js';
@@ -39,7 +38,6 @@ app.get('/', (req, res) => res.status(200).json({ message: '¡Bienvenido a DeCam
 // Declaración de endpoints llamando a routes
 app.use('/api/test', testRoutes);
 app.use('/api/user', userRoutes);
-app.use('/api/osm', osmRoutes);
 app.use('/api/routes', routeRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/restaurants', restaurantRoutes);
@@ -55,6 +53,6 @@ app.use(notFoundHandler);
 // Comienzo del listening para conectar con MongoDB y correr express en el puerto previamente declarado
 app.listen(PORT, async () => {
   await connection()
-  console.log("Server listening on PORT ❤️ 🔥🔥: " + PORT);
+  console.log("Server listening on PORT " + PORT);
 })
 
