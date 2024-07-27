@@ -1,0 +1,34 @@
+.swiper {
+    width: 100%;
+    height: 200px; 
+    min-height: 200px;
+    
+  }
+  
+  .swiper-slide {
+    /* text-align: center;
+    font-size: 18px;
+    background: #fff; */
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  
+  
+ 
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #17C3B2; 
+  }
+
+  

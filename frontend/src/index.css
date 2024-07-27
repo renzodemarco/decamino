@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container {
+    height: 80vh;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    position:relative
+  }
+
+  .cluster-icon {
+    background-color: #333;
+    height: 2em;
+    width: 2em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0px 5px #fff;
+  }
+
+/*?-----------------------------------------[ LOADER CSS ]--------------------------------------------*/
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94, 104, 121, 0.137);
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: #ececec;
+    border-radius: 50%;
+    border: 2px solid #e2e1e1;
+    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  }
+  
+  .loader span {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #517CCC, #7CCC8D);
+    animation: rotate 1s infinite linear;
+  }
+  
+  @keyframes rotate {
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/*?------------------------------------------------------------------------------------------------------------*/
